@@ -63,13 +63,13 @@
             color: #666;
             text-align: center;
         }
-        
+
         .link {
-          color: #FFFFFF;
+            color: #FFFFFF;
         }
 
         .link:visited {
-          color: #FFFFFF;
+            color: #FFFFFF;
         }
     </style>
 </head>
@@ -136,20 +136,25 @@
             <div class="col-md-6 order-md-1 order-2">
                 <div class="info-section">
                     <h2>Physical and Mental Health Effects</h2>
-                    <p>Bullying can lead to both physical and mental health issues. Victims of bullying may experience anxiety,
-                        depression, and suicidal thoughts. The emotional toll can be long-lasting, often leading to feelings
+                    <p>Bullying can lead to both physical and mental health issues. Victims of bullying may experience
+                        anxiety,
+                        depression, and suicidal thoughts. The emotional toll can be long-lasting, often leading to
+                        feelings
                         of isolation and hopelessness.</p>
                 </div>
                 <div class="info-section">
                     <h2>Academic Impact</h2>
-                    <p>Students who experience bullying may suffer academically, with lower grades, absenteeism, and a lack of
-                        motivation. The stress caused by bullying can also hinder their ability to concentrate and perform well
+                    <p>Students who experience bullying may suffer academically, with lower grades, absenteeism, and a
+                        lack of
+                        motivation. The stress caused by bullying can also hinder their ability to concentrate and
+                        perform well
                         in school.</p>
                 </div>
             </div>
             <div class="col-md-6 order-md-2 order-1">
                 <div class="info-section text-center">
-                    <img src="https://images.pexels.com/photos/1510149/pexels-photo-1510149.jpeg" class="img-fluid rounded">
+                    <img src="https://images.pexels.com/photos/1510149/pexels-photo-1510149.jpeg"
+                        class="img-fluid rounded">
                     <p><i>Image: A girl experiencing bullying's harmful effects</i></p>
                 </div>
             </div>
@@ -160,19 +165,27 @@
         <div class="row d-flex">
             <div class="col-md-6 order-md-1 order-2">
                 <div class="info-section">
-                  <h2>Verbal Bullying</h2>
-                  <p>Verbal bullying involves using words to hurt or degrade others. This can include name-calling, teasing, or making hurtful jokes. Although it may not leave visible scars, it can deeply affect a person’s self-esteem. In today's digital age, verbal bullying can extend to cyberbullying, where harmful words and actions are carried out online through social media, text messages, or other digital platforms. Cyberbullying can be just as damaging as face-to-face verbal bullying, often leading to lasting emotional and psychological effects.</p>
+                    <h2>Verbal Bullying</h2>
+                    <p>Verbal bullying involves using words to hurt or degrade others. This can include name-calling,
+                        teasing, or making hurtful jokes. Although it may not leave visible scars, it can deeply affect
+                        a person’s self-esteem. In today's digital age, verbal bullying can extend to cyberbullying,
+                        where harmful words and actions are carried out online through social media, text messages, or
+                        other digital platforms. Cyberbullying can be just as damaging as face-to-face verbal bullying,
+                        often leading to lasting emotional and psychological effects.</p>
                 </div>
                 <div class="info-section">
                     <h2>Physical Bullying</h2>
-                    <p>Physical bullying includes actions such as hitting, pushing, or damaging property. These acts of aggression
+                    <p>Physical bullying includes actions such as hitting, pushing, or damaging property. These acts of
+                        aggression
                         can leave physical scars and are often used to instill fear in the victim.</p>
                 </div>
             </div>
             <div class="col-md-6 order-md-2 order-1">
                 <div class="info-section text-center">
                     <img src="https://booklife.co.uk/cdn/shop/products/Types_of_Bullying.jpg" class="img-fluid rounded">
-                    <p><i>Image: A diagram explaining the various different types of bullying<br>Source: <a href="https://booklife.co.uk/products/free-types-of-bullying-poster" target="_blank">BookLife</a></i></p>
+                    <p><i>Image: A diagram explaining the various different types of bullying<br>Source: <a
+                                href="https://booklife.co.uk/products/free-types-of-bullying-poster"
+                                target="_blank">BookLife</a></i></p>
                 </div>
             </div>
         </div>
@@ -183,18 +196,21 @@
             <div class="col-md-6 order-md-1 order-2">
                 <div class="info-section">
                     <h2>Speak Up</h2>
-                    <p>If you witness bullying, don't stay silent. Speak up for the victim and report the situation to a teacher
+                    <p>If you witness bullying, don't stay silent. Speak up for the victim and report the situation to a
+                        teacher
                         or trusted adult. Your voice can make a difference.</p>
                 </div>
                 <div class="info-section">
                     <h2>Support Victims</h2>
-                    <p>Offer support to those who are affected by bullying. Whether it's through listening, offering friendship,
+                    <p>Offer support to those who are affected by bullying. Whether it's through listening, offering
+                        friendship,
                         or helping them find the resources they need, showing empathy can have a significant impact.</p>
                 </div>
             </div>
             <div class="col-md-6 order-md-2 order-1">
                 <div class="info-section text-center">
-                    <img src="https://images.pexels.com/photos/12585870/pexels-photo-12585870.jpeg" class="img-fluid rounded">
+                    <img src="https://images.pexels.com/photos/12585870/pexels-photo-12585870.jpeg"
+                        class="img-fluid rounded">
                     <p><i>Image: A child telling a bully to stop</i></p>
                 </div>
             </div>
@@ -205,13 +221,22 @@
     <!-- Footer Section -->
     <footer>
         BullySafe Inc. © 2025
-		<br>Reimagining the world of tomorrow
-        <br>A collaboration between <a href="https://github.com/orn8" target="_blank" class="link">oragne</a> and <a href="https://github.com/liquid-nitrogen7" target="_blank" class="link">Liquid Nitrogen</a>
+        <br>Reimagining the world of tomorrow
+        <br>A collaboration between <a href="https://github.com/orn8" target="_blank" class="link">oragne</a> and <a
+            href="https://github.com/liquid-nitrogen7" target="_blank" class="link">Liquid Nitrogen</a>
     </footer>
 
     <script>
         document.querySelectorAll('.navbar-nav a').forEach(link => {
-            link.addEventListener('click', () => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }
+
                 const navbarCollapse = document.getElementById('navbarNav');
                 if (navbarCollapse.classList.contains('show')) {
                     navbarCollapse.classList.remove('show');
